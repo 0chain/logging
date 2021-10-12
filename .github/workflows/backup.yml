@@ -1,5 +1,8 @@
 name: Mirror repo to S3
-on: push
+on:
+  push:
+    branches:
+      - backup
 jobs:
   s3Backup:
     runs-on: docker-builds
